@@ -1,0 +1,16 @@
+body {
+    background: black; 
+    background-image: url("https://www.nawpic.com/media/2020/rick-and-morty-nawpic-61.jpg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+}
+
+.img_home {
+    width: 400px;
+    height: 400px;
+}
+
+.img-card img{
+    height: 160px;
+}
