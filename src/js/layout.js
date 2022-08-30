@@ -5,7 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
-import { Personajes } from "./views/personajes.jsx";
+import { Personajes } from "./views/personajes.js";
 import { Episodios } from "./views/episodios.jsx";
 import injectContext from "./store/appContext";
 
@@ -33,17 +33,10 @@ const Layout = () => {
 						<Route exact path="/episodios">
 							<Episodios />
 						</Route>
-						{/* <Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route> */}
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
 					</Switch>
-					{/* <Footer /> */}
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

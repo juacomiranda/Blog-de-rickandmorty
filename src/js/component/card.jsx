@@ -14,6 +14,7 @@ export const Card = (props) => {
         </div>
     )
 }
+
 export const CardEp = (props)=> {
     return (
         <div className="col">
