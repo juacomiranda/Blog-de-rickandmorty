@@ -7,12 +7,13 @@ import { Navbar } from '../component/navbar.js';
 
 export function Personajes(){
     const {store, actions}= useContext(Context);
-    return <>
+    return (<>
         <h1>Personajes</h1>
-        <div className="container">
-            {store.characters?.map((obj, index)=>{
+        <div className="row">
+            {store.characters.map((obj, index)=>{
                 return <li>{obj.name}</li>
             })}
         </div>
-        </>           
+        </>
+    )           
 }

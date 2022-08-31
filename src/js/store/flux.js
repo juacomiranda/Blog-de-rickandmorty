@@ -22,7 +22,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getCharacter: ()=>{
 				fetch("https://rickandmortyapi.com/api/character")
   					.then(response => response.json())
-  					.then(result => setStore({characters:result}))
+  					.then(result => setStore({characters:result.results}))
   					.catch(error => console.log('error', error));
 			},
 			// Use getActions to call a function within a fuction
