@@ -11,7 +11,7 @@ export function Personajes(){
         <h1>Personajes</h1>
         <div className="row">
             {store.characters.map((obj, index)=>{
-                return <li>{obj.name}</li>
+                return <Card title={obj.name}  url = {obj.image}  />
             })}
         </div>
         </>
