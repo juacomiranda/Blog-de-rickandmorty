@@ -2,7 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			characters:[],
-			episodios:[],
+			episode:[],
 			favoritos:[],
 			demo: [
 				{
@@ -23,6 +23,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch("https://rickandmortyapi.com/api/character")
   					.then(response => response.json())
   					.then(result => setStore({characters:result.results}))
+  					.catch(error => console.log('error', error));
+			},
+
+			getEpisode: ()=>{
+				fetch("https://rickandmortyapi.com/api/episode")
+  					.then(response => response.json())
+  					.then(result => setStore({episode:result.results}))
   					.catch(error => console.log('error', error));
 			},
 			// Use getActions to call a function within a fuction
