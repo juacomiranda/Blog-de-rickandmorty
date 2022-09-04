@@ -10,7 +10,7 @@ export function Personajes(){
     return <>
         <div className="row">
             {store.characters.map((obj, index)=>{
-                return <Card title={obj.name}  url = {obj.image}  />
+                return <Card title={obj.name}  url = {obj.image}  ruta={'/detalleCh/'+index} />
             })}
         </div>
         </>          
