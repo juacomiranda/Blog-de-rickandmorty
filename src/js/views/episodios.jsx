@@ -9,7 +9,7 @@ export function Episodios(){
         return <>
             <div className="row">
                 {store.episode.map((obj, index)=>{
-                    return <CardEp title={obj.name}  url = {obj.image}  />
+                    return <CardEp title={obj.name} subtitle={obj.episode} fecha={obj.air_date} />
                 })}
             </div>
             </>         
