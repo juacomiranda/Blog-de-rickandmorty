@@ -14,7 +14,7 @@ export function DetalleCh (){
         <div className="container mt-5 ">
             <div className="row">
                 <div className="col">
-                    <img src={store.characters[theid]?.image}  className="rounded" />
+                    <img src={store.characters[theid]?.image}  className="rounded-circle" />
                 </div>
                 <div className="col-4">
                     <p className="card-descrip">Nombre: {store.characters[theid]?.name}</p>
